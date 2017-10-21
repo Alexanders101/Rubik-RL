@@ -6,6 +6,7 @@ import Rotations
 
 class RubiksEnv(Env):
     metadata = {'render.modes': ['human']}
+    reward_range = (0, 1)
 
 
     def __init__(self, reward_func, scrambles=2, diff_reward=False, max_step=60):
